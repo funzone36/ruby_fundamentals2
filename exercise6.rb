@@ -1,3 +1,8 @@
-grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-grocery_list.each { |x| puts x}
+
+def output
+  grocery_list = ["carrots", "toilet paper", "apples", "salmon", "rice"]
+  grocery_list.each { |x| puts x}
+end
+
+output
