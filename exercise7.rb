@@ -9,19 +9,14 @@ students = {
 students[:cohort4] = 43
 
 students.delete(:cohort2)
-
+sum = 0
 students.each do |cohort, size|
   size = (size * 1.05).round
   puts "#{cohort}: #{size} students"
 
+  sum = sum + size
+end
+puts "The total number of students is #{sum}."
 end
 
-end
-
-def keys
-  students.each do |cohort, size|
-    puts "#{cohort}"
-end
-end
-
-keys
+students
