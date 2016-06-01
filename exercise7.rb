@@ -14,4 +14,11 @@ students.each do |cohort, size|
 end
 
 end
-students
+
+def keys
+  students.each do |cohort, size|
+    puts "#{cohort}"
+end
+end
+
+keys
