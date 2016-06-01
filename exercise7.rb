@@ -9,6 +9,7 @@ students = {
 students[:cohort4] = 43
 
 students.each do |cohort, size|
+  size = (size * 1.05).round
   puts "#{cohort}: #{size} students"
 
 end
