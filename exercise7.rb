@@ -8,6 +8,8 @@ students = {
 
 students[:cohort4] = 43
 
+puts students.keys
+
 students.delete(:cohort2)
 sum = 0
 students.each do |cohort, size|
